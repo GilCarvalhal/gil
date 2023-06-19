@@ -137,7 +137,6 @@ section.module.parallax h1 {
   overflow: hidden;
   margin: 20px 45px;
   padding: 5;
-
 }
 
 /*Image*/
@@ -176,11 +175,77 @@ section.module.parallax h1 {
 }
 
 /* Hover states */
-
 .card:hover .card-description {
   transform: translateY(100%);
 }
 
 .card:hover .card-image {
   height: 100%;
+}
+
+/*========== SOCIAL MEDIA ICONS ==========*/
+
+.icons {
+  display: flex;
+  column-gap: 25px;
+  background-color: #ece7d5;
+  margin: 0;
+  padding: 20px;
+  list-style-type: none;
+}
+.icon {
+  display: inline-flex;
+  width: 60px;
+  height: 60px;
+  text-decoration: none;
+  font-size: 26px;
+  color: #fff;
+  border-radius: 50%;
+  outline: 2px solid #fff;
+  transition-property: outline-offset, outline-color, background-color;
+  transition-duration: 0.25s;
+}
+.icon:hover {
+  outline-offset: 4px;
+}
+.icon i {
+  margin: auto;
+}
+.icon:hover i {
+  animation: shake 0.25s;
+}
+.icon--instagram:hover {
+  background-image: radial-gradient(
+    circle at 30% 107%,
+    #fdf497 0%,
+    #fdf497 5%,
+    #fd5949 45%,
+    #d6249f 60%,
+    #285aeb 90%
+  );
+  outline-color: #a02d76;
+}
+
+.icon--linkedin:hover {
+  background-color: #0077b5;
+  outline-color: #0077b5;
+}
+.icon--github:hover {
+  background-color: #000;
+  outline-color: #000;
+}
+
+@keyframes shake {
+  10% {
+    transform: rotate(15deg);
+  }
+  20% {
+    transform: rotate(-15deg);
+  }
+  30% {
+    transform: rotate(15deg);
+  }
+  40% {
+    transform: rotate(-15deg);
+  }
 }
