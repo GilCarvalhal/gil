@@ -135,8 +135,8 @@ section.module.parallax h1 {
   transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
   border-radius: 1em;
   overflow: hidden;
-  margin: 20px 45px;
-  padding: 5;
+  margin-left: 75px;
+  margin-top: 25px;
 }
 
 /*Image*/
@@ -171,7 +171,6 @@ section.module.parallax h1 {
 
 .text-body {
   font-size: 1em;
-  line-height: 150%;
 }
 
 /* Hover states */
