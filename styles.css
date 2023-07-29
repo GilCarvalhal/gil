@@ -248,3 +248,34 @@ section.module.parallax h1 {
     transform: rotate(-15deg);
   }
 }
+
+@media screen and (max-width: 768px) {
+  .wrap {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .container {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  div .wrap {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-content: space-between;
+    flex-direction: column;
+  }
+
+  .container {
+    width: 100%;
+    margin: 0;
+  }
+}
