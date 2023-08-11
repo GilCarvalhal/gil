@@ -1,6 +1,7 @@
 body {
   margin: 0;
   padding: 0;
+  width: 100%;
   color: #242424;
   font-family: sans-serif;
   word-wrap: break-word;
@@ -265,7 +266,7 @@ section.module.parallax h1 {
 }
 
 @media screen and (max-width: 480px) {
-  div .wrap {
+  .wrap {
     width: 100%;
     margin: 0;
     padding: 0;
@@ -277,5 +278,41 @@ section.module.parallax h1 {
   .container {
     width: 100%;
     margin: 0;
+  }
+}
+
+@media screen and (max-width: 393px) {
+  html {
+    width: 100%;
+  }
+
+  section.module h1 {
+    font-weight: lighter;
+  }
+
+  div.wrap {
+    width: 50%;
+  }
+
+  p.text-title {
+    margin-bottom: 5px;
+  }
+
+  img.card-image {
+    width: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 1em 1em 0 0;
+  }
+
+  div.card-description,
+  div.wrap {
+    width: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
   }
 }
