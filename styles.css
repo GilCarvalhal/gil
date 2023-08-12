@@ -124,7 +124,7 @@ section.module.parallax h1 {
 /* ========== CARDS ========== */
 .wrap {
   display: inline-block;
-  justify-content: space-between;
+  justify-content: space-around;
   flex-wrap: wrap;
   cursor: pointer;
 }
@@ -251,6 +251,17 @@ section.module.parallax h1 {
 }
 
 @media screen and (max-width: 768px) {
+  * {
+    box-sizing: border-box;
+  }
+
+  html,
+  body {
+    width: 100%;
+    height: 100%;
+    font-family: sans-serif;
+  }
+
   .wrap {
     display: flex;
     align-items: center;
@@ -258,61 +269,61 @@ section.module.parallax h1 {
     flex-direction: column;
   }
 
-  .container {
-    width: 100%;
+  p.text-title {
+    display: flex;
+    align-items: center;
     margin: 0;
-    padding: 0;
   }
 }
 
 @media screen and (max-width: 480px) {
-  .wrap {
-    width: 100%;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    align-content: space-between;
-    flex-direction: column;
+  * {
+    box-sizing: border-box;
   }
 
-  .container {
+  html,
+  body {
     width: 100%;
-    margin: 0;
+    height: 100%;
+    font-family: sans-serif;
+  }
+
+  div.card {
+    width: 350px;
+    height: 350px;
+    display: flex;
+    align-items: center;
+    margin-right: 60px;
   }
 }
 
-@media screen and (max-width: 393px) {
-  html {
+@media screen and (max-width: 400px) {
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  html,
+  body {
     width: 100%;
+    height: 100%;
+    font-family: sans-serif;
   }
 
   section.module h1 {
     font-weight: lighter;
   }
 
-  div.wrap {
-    width: 50%;
+  div.card {
+    width: 250px;
+    height: 250px;
+    display: flex;
+    align-items: center;
   }
 
   p.text-title {
-    margin-bottom: 5px;
-  }
-
-  img.card-image {
-    width: 70%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 1em 1em 0 0;
-  }
-
-  div.card-description,
-  div.wrap {
-    width: 70%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 0;
-    padding: 0;
+    font-size: medium;
+    font-weight: bold;
   }
 }
