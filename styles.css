@@ -285,17 +285,14 @@ section.module.parallax h1 {
   }
 }
 
-@media (max-width: 400px) {
+@media (max-width: 414px) {
   body {
     width: 100%;
   }
 
-  .module h1 {
-    font-weight: lighter;
-  }
-
   .wrap {
-    display: flex;
+    width: 400px;
+    height: 400px;
   }
 
   .card {
@@ -303,18 +300,20 @@ section.module.parallax h1 {
   }
 }
 
-@media (max-width: 414px) {
+@media (max-width: 400px) {
   body {
     width: 100%;
   }
 
-  .wrap {
-    width: 420px;
-    height: 420px;
+  .module h1 {
+    font-weight: bolder;
   }
 
-  .card {
+  .wrap {
+    width: 300px;
+    height: 300px;
     margin: 0 auto;
+    margin-bottom: 10px;
   }
 }
 
