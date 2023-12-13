@@ -12,7 +12,6 @@ body {
   overflow-wrap: break-word;
 }
 
-h1,
 h2,
 h3,
 h4,
@@ -116,6 +115,10 @@ section.module.parallax-3 {
 
 section.module.parallax-4 {
   background-image: url("https://c.wallhere.com/photos/09/8d/blue_sunset_sky_cloud_sun_france_green_nature-854248.jpg!d");
+}
+
+section.module.parallax-5 {
+  background-image: url("https://img.freepik.com/fotos-premium/fundo-de-grama-verde-ao-por-do-sol-o-sol-rompe-a-grama-fundo-abstratotextura-espaco-para-texto_277130-2092.jpg");
 }
 
 section.module.parallax h1 {
@@ -266,6 +269,11 @@ section.module.parallax h1 {
     display: flex;
   }
 
+  section.module.parallax h1 {
+    color: #fff;
+    font-size: 70px;
+  }
+
   .card {
     margin: 0 auto;
     margin-bottom: 15px;
@@ -273,15 +281,15 @@ section.module.parallax h1 {
 }
 
 @media (max-width: 450px) {
-  .module h1,
-  h2 {
-    font-weight: bolder;
-  }
-
   .wrap {
     width: 370px;
     height: 370px;
     display: flex;
+  }
+
+  section.module.parallax h1 {
+    color: #fff;
+    font-size: 60px;
   }
 
   .card {
@@ -323,6 +331,11 @@ section.module.parallax h1 {
     height: 300px;
     margin: 0 auto;
     margin-bottom: 10px;
+  }
+
+  section.module.parallax h1 {
+    color: #fff;
+    font-size: 55px;
   }
 }
 
