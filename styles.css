@@ -118,7 +118,11 @@ section.module.parallax-4 {
 }
 
 section.module.parallax-5 {
-  background-image: url("https://img.freepik.com/fotos-premium/fundo-de-grama-verde-ao-por-do-sol-o-sol-rompe-a-grama-fundo-abstratotextura-espaco-para-texto_277130-2092.jpg");
+  background-image: url("https://images.unsplash.com/photo-1625102134731-563be2f7f55b?q=80&w=1886&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+}
+
+section.module.parallax-6 {
+  background-image: url("https://img.freepik.com/fotos-premium/vista-de-baixo-angulo-da-silhueta-da-grama-contra-o-ceu-laranja-durante-o-por-do-sol_1048944-5371448.jpg");
 }
 
 section.module.parallax h1 {
@@ -126,6 +130,19 @@ section.module.parallax h1 {
   text-align: center;
   font-size: 78px;
   z-index: 50;
+}
+
+div.badges {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+div.badges img {
+  width: 40%;
+  margin: 1%;
+  padding: 0.3%;
+  border-radius: 10px;
 }
 
 /* ========== CARDS ========== */
@@ -257,96 +274,6 @@ section.module.parallax h1 {
   }
 }
 
-@media (max-width: 871px) {
-  .wrap {
-    display: flex;
-    margin: 0 auto;
-  }
-}
-
-@media (max-width: 768px) {
-  .wrap {
-    display: flex;
-  }
-
-  section.module.parallax h1 {
-    color: #fff;
-    font-size: 70px;
-  }
-
-  .card {
-    margin: 0 auto;
-    margin-bottom: 15px;
-  }
-}
-
-@media (max-width: 450px) {
-  .wrap {
-    width: 370px;
-    height: 370px;
-    display: flex;
-  }
-
-  section.module.parallax h1 {
-    color: #fff;
-    font-size: 60px;
-  }
-
-  .card {
-    margin: 0 auto;
-  }
-}
-
-@media (max-width: 414px) {
-  .wrap {
-    width: 350px;
-    height: 350px;
-  }
-
-  .card {
-    margin: 0 auto;
-  }
-}
-
-@media (max-width: 400px) {
-  .wrap {
-    width: 300px;
-    height: 300px;
-    margin: 0 auto;
-    margin-bottom: 15px;
-  }
-}
-
-@media (max-width: 393px) {
-  .wrap {
-    width: 300px;
-    height: 300px;
-    margin-bottom: 10px;
-  }
-}
-
-@media (max-width: 375px) {
-  .wrap {
-    width: 300px;
-    height: 300px;
-    margin: 0 auto;
-    margin-bottom: 10px;
-  }
-
-  section.module.parallax h1 {
-    color: #fff;
-    font-size: 55px;
-  }
-}
-
-@media (max-width: 360px) {
-  .wrap {
-    width: 300px;
-    height: 300px;
-    margin-bottom: 15px;
-  }
-}
-
 /* Botão whatsapp */
 
 .btn-whatsapp {
@@ -364,4 +291,129 @@ section.module.parallax h1 {
 
 .btn-whatsapp img:hover {
   transform: scale(1.1);
+}
+
+/* Responsividade media query */
+
+@media (max-width: 1200px) {
+  section.module.parallax h1 {
+    font-size: 60px;
+    font-weight: 700;
+  }
+
+  section.module.content h4 {
+    font-size: 15px;
+  }
+
+  div.wrap {
+    display: inline-block;
+    margin: 60px;
+    margin-left: 70px;
+  }
+
+  .card {
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 1024px) {
+  div.wrap {
+    display: inline-block;
+    margin: 60px;
+    margin-left: 70px;
+  }
+
+  .card {
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 768px) {
+  div.wrap {
+    display: flex;
+    align-items: center;
+    margin: 50px;
+    margin-bottom: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  section.module.parallax h1 {
+    font-size: 50px;
+  }
+
+  section.module h2 {
+    font-size: 22px;
+  }
+
+  section.module h4 {
+    font-size: 14px;
+  }
+
+  div.wrap {
+    display: flex;
+    justify-content: center;
+  }
+
+  div.card {
+    margin: 0 auto;
+    margin-right: 20px;
+  }
+
+  div.btn-whatsapp img {
+    width: 40px;
+  }
+}
+
+@media (max-width: 320px) {
+  section.module.parallax h1 {
+    font-size: 30px;
+  }
+
+  section.module h2 {
+    font-size: 22px;
+  }
+
+  section.module.content h4 {
+    font-size: 14px;
+  }
+
+  div.wrap {
+    display: flex;
+    justify-content: center;
+  }
+
+  div.card {
+    margin: 0 auto;
+  }
+
+  p.text-title {
+    font-size: larger;
+  }
+
+  p.text-body {
+    font-size: small;
+  }
+
+  div.btn-whatsapp img {
+    width: 35px;
+  }
+}
+
+@media (max-width: 280px) {
+  section.module h2 {
+    font-size: 20px;
+  }
+
+  section.module.content h4 {
+    font-size: 12px;
+  }
+
+  p.text-title {
+    font-size: medium;
+  }
+
+  p.text-body {
+    font-size: smaller;
+  }
 }
