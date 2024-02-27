@@ -208,7 +208,6 @@ div.badges img {
 }
 
 /*========== SOCIAL MEDIA ICONS ==========*/
-
 .icons {
   display: flex;
   column-gap: 25px;
@@ -275,7 +274,6 @@ div.badges img {
 }
 
 /* Botão whatsapp */
-
 .btn-whatsapp {
   position: fixed;
   bottom: 20px;
@@ -294,7 +292,6 @@ div.badges img {
 }
 
 /* Responsividade media query */
-
 @media (max-width: 1200px) {
   section.module.parallax h1 {
     font-size: 60px;
@@ -361,7 +358,7 @@ div.badges img {
   }
 
   div.btn-whatsapp img {
-    width: 40px;
+    width: 50px;
   }
 }
 
@@ -396,7 +393,7 @@ div.badges img {
   }
 
   div.btn-whatsapp img {
-    width: 35px;
+    width: 40px;
   }
 }
 
