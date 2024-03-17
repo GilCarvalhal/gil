@@ -33,13 +33,13 @@ main {
 
 .container {
   width: 100%;
-  max-width: 760px;
+  max-width: 47.5rem;
   margin: 0 auto;
-  padding: 0 20px;
+  padding: 0 1.25rem;
 }
 
 section.module h4 {
-  margin-bottom: 40px;
+  margin-bottom: 2.5rem;
 }
 
 section.module:last-child {
@@ -47,12 +47,12 @@ section.module:last-child {
 }
 
 section.module h2 {
-  margin-bottom: 40px;
-  font-size: 30px;
+  margin-bottom: 2.5rem;
+  font-size: 1.875rem;
 }
 
 section.module.content {
-  padding: 40px 0;
+  padding: 2.5rem 0;
   background: #ece7d5;
 }
 
@@ -128,7 +128,7 @@ section.module.parallax-6 {
 section.module.parallax h1 {
   color: #fff;
   text-align: center;
-  font-size: 78px;
+  font-size: 4.875rem;
   z-index: 50;
 }
 
@@ -142,7 +142,7 @@ div.badges img {
   width: 40%;
   margin: 1%;
   padding: 0.3%;
-  border-radius: 10px;
+  border-radius: .625rem;
 }
 
 /* ========== CARDS ========== */
@@ -154,14 +154,14 @@ div.badges img {
 }
 
 .card {
-  height: 300px;
-  width: 350px;
+  height: 18.75rem;
+  width: 21.875rem;
   position: relative;
   transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
   border-radius: 1em;
   overflow: hidden;
-  margin-left: 75px;
-  margin-top: 25px;
+  margin-left: 4.6875rem;
+  margin-top: 1.5625rem;
 }
 
 /*Image*/
@@ -210,26 +210,26 @@ div.badges img {
 /*========== SOCIAL MEDIA ICONS ==========*/
 .icons {
   display: flex;
-  column-gap: 25px;
+  column-gap: 1.5625rem;
   background-color: #ece7d5;
   margin: 0;
-  padding: 20px;
+  padding: 1.25rem;
   list-style-type: none;
 }
 .icon {
   display: inline-flex;
-  width: 60px;
-  height: 60px;
+  width: 3.75rem;
+  height: 3.75rem;
   text-decoration: none;
-  font-size: 26px;
+  font-size: 1.625rem;
   color: #fff;
   border-radius: 50%;
-  outline: 2px solid #fff;
+  outline: .125rem solid #fff;
   transition-property: outline-offset, outline-color, background-color;
   transition-duration: 0.25s;
 }
 .icon:hover {
-  outline-offset: 4px;
+  outline-offset: .25rem;
 }
 .icon i {
   margin: auto;
@@ -276,48 +276,84 @@ div.badges img {
 /* Botão whatsapp */
 .btn-whatsapp {
   position: fixed;
-  bottom: 20px;
-  right: 20px;
+  bottom: 1.25rem;
+  right: 1.25rem;
   z-index: 99;
 }
 
 .btn-whatsapp img {
-  width: 50px;
-  height: 50px;
+  width: 3.125rem;
+  height: 3.125rem;
   transition: transform 0.5s;
 }
 
 .btn-whatsapp img:hover {
-  transform: scale(1.1);
+  cursor: pointer;
+}
+
+.btn-whatsapp::before,
+.btn-whatsapp::after {
+  content: "";
+  display: flex;
+  align-items: center;
+  position: absolute;
+  border-radius: 50%;
+  inset: -1.5625rem;
+  border: .125rem solid #1ebea5;
+  animation: animar 1.5s linear infinite;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.btn-whatsapp::after {
+  animation-delay: 0.5s;
+}
+
+@keyframes animar {
+  0% {
+    transform: scale(0.5);
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1.2);
+    opacity: 0;
+  }
 }
 
 /* Responsividade media query */
 @media (max-width: 1200px) {
   section.module.parallax h1 {
-    font-size: 60px;
+    font-size: 3.75rem;
     font-weight: 700;
   }
 
   section.module.content h4 {
-    font-size: 15px;
+    font-size: .9375rem;
   }
 
   div.wrap {
     display: inline-block;
-    margin: 60px;
-    margin-left: 70px;
+    margin: 3.75rem;
+    margin-left: 4.375rem;
   }
 
   .card {
     margin: 0 auto;
+  }
+
+  div.btn-whatsapp img {
+    width: 4.375rem;
   }
 }
 
 @media (max-width: 1024px) {
   div.wrap {
     display: inline-block;
-    margin: 60px;
-    margin-left: 70px;
+    margin: 3.75rem;
+    margin-left: 4.375rem;
   }
 
   .card {
@@ -329,22 +365,22 @@ div.badges img {
   div.wrap {
     display: flex;
     align-items: center;
-    margin: 50px;
-    margin-bottom: 10px;
+    margin: 3.125rem;
+    margin-bottom: .625rem;
   }
 }
 
 @media (max-width: 480px) {
   section.module.parallax h1 {
-    font-size: 50px;
+    font-size: 3.125rem;
   }
 
   section.module h2 {
-    font-size: 22px;
+    font-size: 1.375rem;
   }
 
   section.module h4 {
-    font-size: 14px;
+    font-size: .875rem;
   }
 
   div.wrap {
@@ -354,25 +390,25 @@ div.badges img {
 
   div.card {
     margin: 0 auto;
-    margin-right: 20px;
+    margin-right: 1.25rem;
   }
 
   div.btn-whatsapp img {
-    width: 50px;
+    width: 3.125rem;
   }
 }
 
 @media (max-width: 320px) {
   section.module.parallax h1 {
-    font-size: 30px;
+    font-size: 1.875rem;
   }
 
   section.module h2 {
-    font-size: 22px;
+    font-size: 1.375rem;
   }
 
   section.module.content h4 {
-    font-size: 14px;
+    font-size: .875rem;
   }
 
   div.wrap {
@@ -393,17 +429,17 @@ div.badges img {
   }
 
   div.btn-whatsapp img {
-    width: 40px;
+    width: 2.5rem;
   }
 }
 
 @media (max-width: 280px) {
   section.module h2 {
-    font-size: 20px;
+    font-size: 1.25rem;
   }
 
   section.module.content h4 {
-    font-size: 12px;
+    font-size: .75rem;
   }
 
   p.text-title {
@@ -412,5 +448,9 @@ div.badges img {
 
   p.text-body {
     font-size: smaller;
+  }
+
+  div.btn-whatsapp img {
+    width: 2.1875rem;
   }
 }
