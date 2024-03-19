@@ -142,7 +142,7 @@ div.badges img {
   width: 40%;
   margin: 1%;
   padding: 0.3%;
-  border-radius: .625rem;
+  border-radius: 0.625rem;
 }
 
 /* ========== CARDS ========== */
@@ -224,12 +224,12 @@ div.badges img {
   font-size: 1.625rem;
   color: #fff;
   border-radius: 50%;
-  outline: .125rem solid #fff;
+  outline: 0.125rem solid #fff;
   transition-property: outline-offset, outline-color, background-color;
   transition-duration: 0.25s;
 }
 .icon:hover {
-  outline-offset: .25rem;
+  outline-offset: 0.25rem;
 }
 .icon i {
   margin: auto;
@@ -285,41 +285,19 @@ div.badges img {
   width: 3.125rem;
   height: 3.125rem;
   transition: transform 0.5s;
+  animation: translateY 0.8s infinite alternate;
 }
 
 .btn-whatsapp img:hover {
   cursor: pointer;
 }
 
-.btn-whatsapp::before,
-.btn-whatsapp::after {
-  content: "";
-  display: flex;
-  align-items: center;
-  position: absolute;
-  border-radius: 50%;
-  inset: -1.5625rem;
-  border: .125rem solid #1ebea5;
-  animation: animar 1.5s linear infinite;
-  opacity: 0;
-  pointer-events: none;
-}
-
-.btn-whatsapp::after {
-  animation-delay: 0.5s;
-}
-
-@keyframes animar {
-  0% {
-    transform: scale(0.5);
-    opacity: 0;
+@keyframes translateY {
+  from {
+    transform: translateY(0) scale(1);
   }
-  50% {
-    opacity: 1;
-  }
-  100% {
-    transform: scale(1.2);
-    opacity: 0;
+  to {
+    transform: translateY(-8px) scale(1.1);
   }
 }
 
@@ -331,7 +309,7 @@ div.badges img {
   }
 
   section.module.content h4 {
-    font-size: .9375rem;
+    font-size: 0.9375rem;
   }
 
   div.wrap {
@@ -366,7 +344,7 @@ div.badges img {
     display: flex;
     align-items: center;
     margin: 3.125rem;
-    margin-bottom: .625rem;
+    margin-bottom: 0.625rem;
   }
 }
 
@@ -380,7 +358,7 @@ div.badges img {
   }
 
   section.module h4 {
-    font-size: .875rem;
+    font-size: 0.875rem;
   }
 
   div.wrap {
@@ -408,7 +386,7 @@ div.badges img {
   }
 
   section.module.content h4 {
-    font-size: .875rem;
+    font-size: 0.875rem;
   }
 
   div.wrap {
@@ -439,7 +417,7 @@ div.badges img {
   }
 
   section.module.content h4 {
-    font-size: .75rem;
+    font-size: 0.75rem;
   }
 
   p.text-title {
