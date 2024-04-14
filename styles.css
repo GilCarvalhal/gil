@@ -301,6 +301,124 @@ div.badges img {
   }
 }
 
+/* Slider carousel */
+#carousel {
+  position: relative;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 12.5rem;
+  height: 400px;
+  top: 50%;
+  transform: translateY(-50%);
+  overflow: hidden;
+}
+
+#carousel div {
+  position: absolute;
+  transition: transform 1s, left 1s, opacity 1s, z-index 0s;
+  opacity: 1;
+}
+
+#carousel div img {
+  width: 400px;
+  transition: width 1s;
+}
+
+#carousel div.hideLeft {
+  left: 0%;
+  opacity: 0;
+  transform: translateY(50%) translateX(-50%);
+}
+
+#carousel div.hideLeft img {
+  width: 200px;
+}
+
+#carousel div.hideRight {
+  left: 100%;
+  opacity: 0;
+  transform: translateY(50%) translateX(-50%);
+}
+
+#carousel div.hideRight img {
+  width: 200px;
+}
+
+#carousel div.prev {
+  z-index: 5;
+  left: 30%;
+  transform: translateY(50px) translateX(-50%);
+}
+
+#carousel div.prev img {
+  width: 300px;
+}
+
+#carousel div.prevLeftSecond {
+  z-index: 4;
+  left: 15%;
+  transform: translateY(50%) translateX(-50%);
+  opacity: 0.7;
+}
+
+#carousel div.prevLeftSecond img {
+  width: 200px;
+}
+
+#carousel div.selected {
+  z-index: 10;
+  left: 50%;
+  transform: translateY(0px) translateX(-50%);
+}
+
+#carousel div.next {
+  z-index: 5;
+  left: 70%;
+  transform: translateY(50px) translateX(-50%);
+}
+
+#carousel div.next img {
+  width: 300px;
+}
+
+#carousel div.nextRightSecond {
+  z-index: 4;
+  left: 85%;
+  transform: translateY(50%) translateX(-50%);
+  opacity: 0.7;
+}
+
+#carousel div.nextRightSecond img {
+  width: 200px;
+}
+
+div.buttons {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 10px;
+}
+
+i.fa-solid {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: large;
+}
+
+#next,
+#prev {
+  width: 80px;
+  height: 50px;
+  border: none;
+  cursor: pointer;
+  background-color: #ece7d5;
+}
+
 /* Responsividade media query */
 @media (max-width: 1200px) {
   section.module.parallax h1 {
@@ -312,39 +430,24 @@ div.badges img {
     font-size: 0.9375rem;
   }
 
-  div.wrap {
-    display: inline-block;
-    margin: 3.75rem;
-    margin-left: 4.375rem;
-  }
-
-  .card {
-    margin: 0 auto;
-  }
-
   div.btn-whatsapp img {
     width: 4.375rem;
   }
 }
 
 @media (max-width: 1024px) {
-  div.wrap {
-    display: inline-block;
-    margin: 3.75rem;
-    margin-left: 4.375rem;
+  div#carousel {
+    margin-top: 12.5rem;
   }
 
-  .card {
-    margin: 0 auto;
+  div.buttons {
+    margin-bottom: 3.125rem;
   }
 }
 
 @media (max-width: 768px) {
-  div.wrap {
-    display: flex;
-    align-items: center;
-    margin: 3.125rem;
-    margin-bottom: 0.625rem;
+  div#carousel img {
+    max-width: 31.25rem;
   }
 }
 
@@ -361,14 +464,16 @@ div.badges img {
     font-size: 0.875rem;
   }
 
-  div.wrap {
-    display: flex;
-    justify-content: center;
+  div#carousel {
+    margin: 1.25rem;
+    margin-top: 6.25rem;
   }
 
-  div.card {
-    margin: 0 auto;
-    margin-right: 1.25rem;
+  div#carousel img {
+    margin-top: 3.125rem;
+    max-width: 18.75rem;
+    width: auto;
+    height: 15.625rem;
   }
 
   div.btn-whatsapp img {
@@ -389,21 +494,13 @@ div.badges img {
     font-size: 0.875rem;
   }
 
-  div.wrap {
-    display: flex;
-    justify-content: center;
+  div#carousel {
+    margin-top: 9.375rem;
   }
 
-  div.card {
-    margin: 0 auto;
-  }
-
-  p.text-title {
-    font-size: larger;
-  }
-
-  p.text-body {
-    font-size: small;
+  div#carousel img {
+    margin-top: 3.125rem;
+    max-width: 15.625rem;
   }
 
   div.btn-whatsapp img {
@@ -420,12 +517,13 @@ div.badges img {
     font-size: 0.75rem;
   }
 
-  p.text-title {
-    font-size: medium;
+  div#carousel {
+    margin-top: 9.375rem;
   }
 
-  p.text-body {
-    font-size: smaller;
+  div#carousel img {
+    margin-top: 3.125rem;
+    max-width: 13.75rem;
   }
 
   div.btn-whatsapp img {
