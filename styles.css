@@ -309,7 +309,7 @@ div.badges img {
   align-items: center;
   justify-content: center;
   margin-top: 12.5rem;
-  height: 400px;
+  height: 25rem;
   top: 50%;
   transform: translateY(-50%);
   overflow: hidden;
@@ -322,7 +322,7 @@ div.badges img {
 }
 
 #carousel div img {
-  width: 400px;
+  width: 25rem;
   transition: width 1s;
 }
 
@@ -333,7 +333,7 @@ div.badges img {
 }
 
 #carousel div.hideLeft img {
-  width: 200px;
+  width: 12.5rem;
 }
 
 #carousel div.hideRight {
@@ -343,7 +343,7 @@ div.badges img {
 }
 
 #carousel div.hideRight img {
-  width: 200px;
+  width: 12.5rem;
 }
 
 #carousel div.prev {
@@ -353,7 +353,7 @@ div.badges img {
 }
 
 #carousel div.prev img {
-  width: 300px;
+  width: 18.75rem;
 }
 
 #carousel div.prevLeftSecond {
@@ -364,7 +364,7 @@ div.badges img {
 }
 
 #carousel div.prevLeftSecond img {
-  width: 200px;
+  width: 12.5rem;
 }
 
 #carousel div.selected {
@@ -380,7 +380,7 @@ div.badges img {
 }
 
 #carousel div.next img {
-  width: 300px;
+  width: 18.75rem;
 }
 
 #carousel div.nextRightSecond {
@@ -391,7 +391,7 @@ div.badges img {
 }
 
 #carousel div.nextRightSecond img {
-  width: 200px;
+  width: 12.5rem;
 }
 
 div.buttons {
@@ -400,7 +400,7 @@ div.buttons {
   justify-content: center;
   left: 50%;
   transform: translateX(-50%);
-  bottom: 10px;
+  bottom: .625rem;
 }
 
 i.fa-solid {
@@ -412,8 +412,8 @@ i.fa-solid {
 
 #next,
 #prev {
-  width: 80px;
-  height: 50px;
+  width: 5rem;
+  height: 3.125rem;
   border: none;
   cursor: pointer;
   background-color: #ece7d5;
