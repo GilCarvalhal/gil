@@ -417,9 +417,9 @@ i.fa-solid {
   border: none;
   cursor: pointer;
   background-color: #ece7d5;
-  border: .0625rem solid #c4b69d;
-  margin: .1875rem;
-  border-radius: .3125rem;
+  border: 0.0625rem solid #c4b69d;
+  margin: 0.1875rem;
+  border-radius: 0.3125rem;
 }
 
 /* Responsividade media query */
