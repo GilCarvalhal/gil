@@ -1,14 +1,3 @@
-// Mudando titulo quando o usuário troca de aba.
-let docTitle = document.title;
-
-window.addEventListener("blur", () => {
-  document.title = "⚠️ Ei, volta aqui! ⚠️";
-});
-
-window.addEventListener("focus", () => {
-  document.title = docTitle;
-});
-
 // Slider Carousel
 function moveToSelected(element) {
   if (element == "next") {
@@ -36,7 +25,6 @@ function moveToSelected(element) {
   $(prevSecond).prevAll().removeClass().addClass("hideLeft");
 }
 
-// Eventos teclado
 $(document).keydown(function (e) {
   switch (e.which) {
     case 37: // left
@@ -64,16 +52,3 @@ $("#prev").click(function () {
 $("#next").click(function () {
   moveToSelected("next");
 });
-
-// Scroll Top
-window.addEventListener("scroll", function () {
-  let scroll = this.document.querySelector(".scrollTop");
-  scroll.classList.toggle("active", this.window.scrollY > 450);
-});
-
-function backTop() {
-  window.scrollTo({
-    top: 0,
-    behavior: "smooth",
-  });
-}

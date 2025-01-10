@@ -1,0 +1,136 @@
+/* Responsividade media query */
+@media (max-width: 1200px) {
+    section.module.parallax h1 {
+        font-size: 3.75rem;
+        font-weight: 700;
+    }
+
+    section.module.content h4 {
+        font-size: .9375rem;
+    }
+
+    div.btn-whatsapp img {
+        width: 4.375rem;
+    }
+}
+
+@media (max-width: 1024px) {
+    div#carousel {
+        margin-top: 12.5rem;
+    }
+
+    div.buttons {
+        margin-bottom: 3.125rem;
+    }
+
+    .scrollTop {
+        width: 55px;
+        height: 55px;
+    }
+}
+
+@media (max-width: 768px) {
+    div#carousel img {
+        max-width: 31.25rem;
+    }
+
+    .scrollTop {
+        width: 55px;
+        height: 55px;
+    }
+}
+
+@media (max-width: 480px) {
+    section.module.parallax h1 {
+        font-size: 3.125rem;
+    }
+
+    section.module h2 {
+        font-size: 1.375rem;
+    }
+
+    section.module h4 {
+        font-size: .875rem;
+    }
+
+    div#carousel {
+        margin: 1.25rem;
+        margin-top: 6.25rem;
+    }
+
+    div#carousel img {
+        margin-top: 3.125rem;
+        max-width: 18.75rem;
+        width: auto;
+        height: 15.625rem;
+    }
+
+    div.btn-whatsapp img {
+        width: 3.125rem;
+    }
+
+    .scrollTop {
+        width: 55px;
+        height: 55px;
+    }
+}
+
+@media (max-width: 320px) {
+    section.module.parallax h1 {
+        font-size: 1.875rem;
+    }
+
+    section.module h2 {
+        font-size: 1.375rem;
+    }
+
+    section.module.content h4 {
+        font-size: .875rem;
+    }
+
+    div#carousel {
+        margin-top: 9.375rem;
+    }
+
+    div#carousel img {
+        margin-top: 3.125rem;
+        max-width: 15.625rem;
+    }
+
+    div.btn-whatsapp img {
+        width: 2.5rem;
+    }
+
+    .scrollTop {
+        width: 45px;
+        height: 45px;
+    }
+}
+
+@media (max-width: 280px) {
+    section.module h2 {
+        font-size: 1.25rem;
+    }
+
+    section.module.content h4 {
+        font-size: .75rem;
+    }
+
+    div#carousel {
+        margin-top: 9.375rem;
+    }
+
+    div#carousel img {
+        margin-top: 3.125rem;
+        max-width: 13.75rem;
+    }
+
+    div.btn-whatsapp img {
+        width: 2.1875rem;
+    }
+
+    .scrollTop {
+        width: 40px;
+        height: 40px;
+    }
+}

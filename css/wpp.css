@@ -1,0 +1,28 @@
+/* Botão whatsapp */
+.btn-whatsapp {
+    position: fixed;
+    bottom: 1.25rem;
+    right: 1.25rem;
+    z-index: 99;
+}
+
+.btn-whatsapp img {
+    width: 3.125rem;
+    height: 3.125rem;
+    transition: transform 0.5s;
+    animation: translateY 0.8s infinite alternate;
+}
+
+.btn-whatsapp img:hover {
+    cursor: pointer;
+}
+
+@keyframes translateY {
+    from {
+        transform: translateY(0) scale(1);
+    }
+
+    to {
+        transform: translateY(-8px) scale(1.1);
+    }
+}

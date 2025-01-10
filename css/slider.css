@@ -1,0 +1,120 @@
+/* Slider carousel */
+#carousel {
+    position: relative;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 12.5rem;
+    height: 25rem;
+    top: 50%;
+    transform: translateY(-50%);
+    overflow: hidden;
+}
+
+#carousel div {
+    position: absolute;
+    transition: transform 1s, left 1s, opacity 1s, z-index 0s;
+    opacity: 1;
+}
+
+#carousel div img {
+    width: 25rem;
+    transition: width 1s;
+}
+
+#carousel div.hideLeft {
+    left: 0%;
+    opacity: 0;
+    transform: translateY(50%) translateX(-50%);
+}
+
+#carousel div.hideLeft img {
+    width: 12.5rem;
+}
+
+#carousel div.hideRight {
+    left: 100%;
+    opacity: 0;
+    transform: translateY(50%) translateX(-50%);
+}
+
+#carousel div.hideRight img {
+    width: 12.5rem;
+}
+
+#carousel div.prev {
+    z-index: 5;
+    left: 30%;
+    transform: translateY(50px) translateX(-50%);
+}
+
+#carousel div.prev img {
+    width: 18.75rem;
+}
+
+#carousel div.prevLeftSecond {
+    z-index: 4;
+    left: 15%;
+    transform: translateY(50%) translateX(-50%);
+    opacity: 0.7;
+}
+
+#carousel div.prevLeftSecond img {
+    width: 12.5rem;
+}
+
+#carousel div.selected {
+    z-index: 10;
+    left: 50%;
+    transform: translateY(0px) translateX(-50%);
+}
+
+#carousel div.next {
+    z-index: 5;
+    left: 70%;
+    transform: translateY(50px) translateX(-50%);
+}
+
+#carousel div.next img {
+    width: 18.75rem;
+}
+
+#carousel div.nextRightSecond {
+    z-index: 4;
+    left: 85%;
+    transform: translateY(50%) translateX(-50%);
+    opacity: 0.7;
+}
+
+#carousel div.nextRightSecond img {
+    width: 12.5rem;
+}
+
+div.buttons {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: .625rem;
+}
+
+i.fa-solid {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: large;
+}
+
+#next,
+#prev {
+    width: 5rem;
+    height: 3.125rem;
+    border: none;
+    cursor: pointer;
+    background-color: #ece7d5;
+    border: .0625rem solid #c4b69d;
+    margin: .1875rem;
+    border-radius: .3125rem;
+}
