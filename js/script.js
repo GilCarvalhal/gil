@@ -52,3 +52,18 @@ $("#prev").click(function () {
 $("#next").click(function () {
   moveToSelected("next");
 });
+
+
+// ======= PART2 =======
+
+$("#carousel-1 div").click(function () {
+  moveToSelected($(this));
+});
+
+$("#prev-1").click(function () {
+  moveToSelected("prev");
+});
+
+$("#next-1").click(function () {
+  moveToSelected("next");
+});
