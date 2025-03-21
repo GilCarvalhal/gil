@@ -15,7 +15,7 @@
     }
 
     .lista li {
-        margin-bottom: 1rem;
+        line-height: 1.5;
     }
 }
 
@@ -47,6 +47,10 @@
 
     div#carousel-1 img {
         max-width: 31.25rem;
+    }
+
+    .lista li {
+        margin-bottom: 0.5rem;
     }
 }
 
@@ -90,6 +94,10 @@
 
     div.btn-whatsapp img {
         width: 3.125rem;
+    }
+
+    .lista li {
+        margin-bottom: 0.8rem;
     }
 }
 
