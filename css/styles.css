@@ -130,3 +130,18 @@ section.module.parallax h1 {
   font-size: 4.875rem;
   z-index: 50;
 }
+
+section h4.atividades {
+  margin: 0;
+  margin-bottom: 1rem;
+}
+
+.lista ul {
+  display: flex;
+  flex-direction: column;
+}
+
+.lista li {
+  line-height: 1.5;
+  font-weight: bold;
+}
