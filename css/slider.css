@@ -213,22 +213,6 @@ i.fa-solid {
     width: 12.5rem;
 }
 
-/* div.buttons {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    left: 50%;
-    transform: translateX(-50%);
-    bottom: .625rem;
-} */
-
-/* i.fa-solid {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: large;
-} */
-
 #next-1,
 #prev-1 {
     width: 5rem;
