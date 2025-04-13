@@ -1,69 +1,71 @@
 // Slider Carousel
-function moveToSelected(element) {
+function moveToSelected(element, carouselId) {
+  const $carousel = $("#" + carouselId);
+
+  let selected;
+
   if (element == "next") {
-    var selected = $(".selected").next();
+    selected = $carousel.find(".selected").next();
   } else if (element == "prev") {
-    var selected = $(".selected").prev();
+    selected = $carousel.find(".selected").prev();
   } else {
-    var selected = element;
+    selected = element;
   }
 
-  var next = $(selected).next();
-  var prev = $(selected).prev();
-  var prevSecond = $(prev).prev();
-  var nextSecond = $(next).next();
+  // Tratativa de erro ao ultrapassar o número de clicks quando não houver mais projetos.
+  if (!selected.length) return;
 
-  $(selected).removeClass().addClass("selected");
+  const next = $(selected).next();
+  const prev = $(selected).prev();
+  const prevSecond = $(prev).prev();
+  const nextSecond = $(next).next();
 
-  $(prev).removeClass().addClass("prev");
-  $(next).removeClass().addClass("next");
+  $carousel.find("div").removeClass();
 
-  $(nextSecond).removeClass().addClass("nextRightSecond");
-  $(prevSecond).removeClass().addClass("prevLeftSecond");
+  $(selected).addClass("selected");
 
-  $(nextSecond).nextAll().removeClass().addClass("hideRight");
-  $(prevSecond).prevAll().removeClass().addClass("hideLeft");
+  $(prev).addClass("prev");
+  $(next).addClass("next");
+
+  $(nextSecond).addClass("nextRightSecond");
+  $(prevSecond).addClass("prevLeftSecond");
+
+  $(nextSecond).nextAll().addClass("hideRight");
+  $(prevSecond).prevAll().addClass("hideLeft");
 }
 
 $(document).keydown(function (e) {
   switch (e.which) {
     case 37: // left
-      moveToSelected("prev");
+      moveToSelected("prev", "carousel"); // ou "carousel-1"
       break;
-
     case 39: // right
-      moveToSelected("next");
+      moveToSelected("next", "carousel");
       break;
-
     default:
       return;
   }
   e.preventDefault();
 });
 
+// Carousel 1 (Frontend)
 $("#carousel div").click(function () {
-  moveToSelected($(this));
+  moveToSelected($(this), "carousel");
 });
-
 $("#prev").click(function () {
-  moveToSelected("prev");
+  moveToSelected("prev", "carousel");
 });
-
 $("#next").click(function () {
-  moveToSelected("next");
+  moveToSelected("next", "carousel");
 });
 
-
-// ======= PART2 =======
-
+// Carousel 2 (Backend)
 $("#carousel-1 div").click(function () {
-  moveToSelected($(this));
+  moveToSelected($(this), "carousel-1");
 });
-
 $("#prev-1").click(function () {
-  moveToSelected("prev");
+  moveToSelected("prev", "carousel-1");
 });
-
 $("#next-1").click(function () {
-  moveToSelected("next");
+  moveToSelected("next", "carousel-1");
 });
