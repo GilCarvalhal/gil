@@ -1,3 +1,12 @@
+:root {
+  --bg-primary: #ece7d5;
+  --bg-white: #fff;
+  --text-primary: #242424;
+  --text-dark: #000;
+  --border-color: #c4b69d;
+  --link-hover: #0077b5;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -7,7 +16,7 @@
 
 body {
   width: 100%;
-  color: #242424;
+  color: var(--text-primary);
   font-family: sans-serif;
   word-wrap: break-word;
   overflow-wrap: break-word;
@@ -19,7 +28,7 @@ h4,
 h5,
 h6 {
   font-weight: 900;
-  color: #000;
+  color: var(--text-dark);
 }
 
 .wrapper {
@@ -29,7 +38,7 @@ h6 {
 
 main {
   display: block;
-  background-color: #fff;
+  background-color: var(--bg-white);
 }
 
 .container {
@@ -54,7 +63,7 @@ section.module h2 {
 
 section.module.content {
   padding: 2.5rem 0;
-  background: #ece7d5;
+  background: var(--bg-primary);
 }
 
 section.module.parallax {
@@ -144,4 +153,15 @@ section h4.atividades {
 .lista li {
   line-height: 1.5;
   font-weight: bold;
+}
+
+/* Links de cursos */
+.curso-link {
+  text-decoration: none;
+  color: inherit;
+  transition: color 0.3s ease;
+}
+
+.curso-link:hover {
+  color: var(--link-hover);
 }

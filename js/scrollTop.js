@@ -1,7 +1,17 @@
-// Scroll Top
+// Scroll Top com throttle para melhor performance
+let ticking = false;
+
 window.addEventListener("scroll", function () {
-  let scroll = this.document.querySelector(".scrollTop");
-  scroll.classList.toggle("active", this.window.scrollY > 450);
+  if (!ticking) {
+    window.requestAnimationFrame(function () {
+      const scroll = document.querySelector(".scrollTop");
+      if (scroll) {
+        scroll.classList.toggle("active", window.scrollY > 450);
+      }
+      ticking = false;
+    });
+    ticking = true;
+  }
 });
 
 function backTop() {

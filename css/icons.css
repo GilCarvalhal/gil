@@ -2,7 +2,7 @@
 .icons {
     display: flex;
     column-gap: 1.5625rem;
-    background-color: #ece7d5;
+    background-color: var(--bg-primary, #ece7d5);
     margin: 0;
     padding: 1.25rem;
     list-style-type: none;

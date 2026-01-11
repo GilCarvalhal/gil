@@ -2,7 +2,7 @@
 .scrollTop {
     outline: none;
     border: 0;
-    background-color: #ece7d5;
+    background-color: var(--bg-primary, #ece7d5);
     width: 60px;
     height: 60px;
     padding: 8px;
